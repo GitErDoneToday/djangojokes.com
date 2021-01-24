@@ -168,5 +168,9 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
+# Set message level to DEBUG for Exercise 48 only:
+
+MESSAGE_LEVEL = 10 # DEBUG
+
 if os.environ.get('ENVIRONMENT') != 'production':
     from .local_settings import *

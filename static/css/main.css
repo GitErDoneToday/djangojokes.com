@@ -1,3 +1,15 @@
+footer {
+  border-top: 1px solid darkgreen;
+}
+
+header {
+  border-bottom: 1px solid darkgreen;
+}
+
+h2 {
+  font-style: italic;
+}
+
 body {
   padding-bottom: 50px;
 }
@@ -12,15 +24,33 @@ label {
   font-weight: normal;
   margin: 0 1rem;
 }
-  
-footer {
-  border-top: 1px solid darkgreen;
+
+/* MESSAGE STYLES */
+.message {
+  background-color: palegoldenrod;
+  color: black;
 }
 
-header {
-  border-bottom: 1px solid darkgreen;
+.messagedebug {
+  background-color: slategray;
+  color: white;
+}
+.messageinfo {
+  background-color: azure;
+  color: darkblue;
 }
 
-h2 {
-  font-style: italic;
+.messagesuccess {
+  background-color: lightgreen;
+  color: darkgreen;
+}
+
+.messagewarning {
+  background-color: lightgoldenrodyellow;
+  color: darkgoldenrod;
+}
+
+.messageerror {
+  background-color: pink;
+  color: darkred;
 }
