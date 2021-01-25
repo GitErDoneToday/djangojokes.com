@@ -9,7 +9,6 @@
 <script src="https://kit.fontawesome.com/93319cd6c4.js" crossorigin="anonymous"></script>
 <link rel="shortcut icon" type="image/png"  href="{% static 'images/favicon.png' %}">
 <title>{% block title %}{% endblock %} | Django Jokes</title>
-
 </head>
 <body>
 <header>
@@ -75,8 +74,8 @@
   {% if messages %}
     <ul>
       {% for message in messages %}
-        <div class="alert message{{message.tags}} alert-dismissable" role="alert">
-          <strong>{{ message }}</strong>
+        <div class="alert message{{ message.tags }} alert-dismissable" role="alert">
+          <strong>{{message}}</strong>
           <button type="button" class="close" data-dismiss="alert"
             aria-label="Close">
             <i class="fas fa-window-close"></i>
