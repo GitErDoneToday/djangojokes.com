@@ -25,7 +25,7 @@
       {% endif %}
       <small class="text-muted">
         {% if user.avatar  %}
-          <img src="{{ user.avatar.url }}" alt="{{ joke.user.username }}" 
+          <img src="{{ joke.user.avatar.url }}" alt="{{ joke.user.username }}" 
           class="mt-1 rounded float-right" width="50" height="50" />
         {% endif %}
         Created on: {{ joke.created }} by {{ joke.user.username }}<br>
