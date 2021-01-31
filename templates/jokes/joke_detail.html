@@ -24,7 +24,7 @@
         </div>
       {% endif %}
       <small class="text-muted">
-        {% if user.avatar  %}
+        {% if joke.user.avatar  %}
           <img src="{{ joke.user.avatar.url }}" alt="{{ joke.user.username }}" 
           class="mt-1 rounded float-right" width="50" height="50" />
         {% endif %}
