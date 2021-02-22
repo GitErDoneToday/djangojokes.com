@@ -36,7 +36,7 @@ class CustomUserAdmin(DjangoJokesAdmin, UserAdmin):
     # Fields for adding new user.
     new_fields = ('email',)
     # Add new fields to unlabelled fieldset.
-    append_fields(UserAdmin.add_fieldsets, None, new_fields)
+    add_fieldsets = append_fields(UserAdmin.add_fieldsets, None, new_fields)
 
     # Add optional fields to new 'Optional Fields' section.
     optional_fields = ('first_name', 'last_name', 'dob')
