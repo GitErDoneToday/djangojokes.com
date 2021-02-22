@@ -23,13 +23,10 @@ class CustomUserAdmin(DjangoJokesAdmin, UserAdmin):
 
     # Fields for editing existing user.
     new_fields = ('dob', 'avatar')
-
     # Add new fields to 'Personal info' fieldset.
     append_fields(UserAdmin.fieldsets, 'Personal info', new_fields)
-
     # Move email field from 'Personal Info' fieldset to unlabelled fieldset.
     move_fields(UserAdmin.fieldsets, 'Personal info', None, ('email',))  
-    
     # Remove password field.
     remove_fields(UserAdmin.fieldsets, None, ('password',)) 
 
