@@ -1,0 +1,18 @@
+{% extends "_base.html" %}
+
+{% block title %}Joke{% endblock %}
+{% block main %}
+  <div class="card border-primary m-auto mb-3 text-center" 
+    style="max-width: 30 rem">
+    <div class="card-header">{{ joke }}</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">{{ joke.answer }}</h5>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+        Created on: {{ joke.created }}
+        Updated on: {{ joke.updated }}
+      </small>
+    </div>
+  </div>  
+{% endblock %}
