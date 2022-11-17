@@ -9,6 +9,6 @@ class JokeAdmin(admin.ModelAdmin):
 
     def get_readonly_fields(self, request, obj=None):
         if obj:  # editing existing object
-            return ('created', 'updated')
+            return ('slug', 'created', 'updated')
 
         return ()
